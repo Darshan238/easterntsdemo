@@ -1,13 +1,13 @@
-class Api3 {
+class BottamApi {
   List<RangeOfPattern>? rangeOfPattern;
   List<DesignOccasion>? designOccasion;
   String? status;
   String? message;
 
-  Api3(
+  BottamApi(
       {this.rangeOfPattern, this.designOccasion, this.status, this.message});
 
-  Api3.fromJson(Map<String, dynamic> json) {
+  BottamApi.fromJson(Map<String, dynamic> json) {
     if (json['range_of_pattern'] != null) {
       rangeOfPattern = <RangeOfPattern>[];
       json['range_of_pattern'].forEach((v) {

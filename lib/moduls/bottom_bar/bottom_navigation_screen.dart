@@ -20,17 +20,17 @@ class BottomNavigationScreen extends StatelessWidget {
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.green,
           unselectedItemColor: Colors.black,
-          showSelectedLabels: false,
+          showSelectedLabels: true,
           currentIndex: ctrl.currentIndex,
           onTap: (index) => ctrl.onNavigationTap(index),
-          showUnselectedLabels: false,
+          showUnselectedLabels: true,
           items: const [
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
                 size: 30,
               ),
-              label: 'Home',
+              label: 'HOME',
               backgroundColor: Colors.white,
             ),
             BottomNavigationBarItem(
@@ -38,7 +38,7 @@ class BottomNavigationScreen extends StatelessWidget {
                 Icons.list_rounded,
                 size: 30,
               ),
-              label: 'search',
+              label: 'CATEGORY',
             ),
             BottomNavigationBarItem(
               icon: Icon(
@@ -46,14 +46,14 @@ class BottomNavigationScreen extends StatelessWidget {
                 size: 30,
               ),
               backgroundColor: Colors.red,
-              label: 'add',
+              label: 'CURATE',
             ),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.flash_on_outlined,
                   size: 30,
                 ),
-                label: 'favorite',
+                label: 'SALE',
                 backgroundColor: Colors.pink),
             BottomNavigationBarItem(
               icon: ClipOval(
@@ -62,7 +62,7 @@ class BottomNavigationScreen extends StatelessWidget {
                   size: 30,
                 ),
               ),
-              label: 'account',
+              label: 'MORE',
             ),
             // AssetImage('asset/images/post4.png',)
           ],
